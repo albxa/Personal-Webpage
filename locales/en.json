@@ -1,0 +1,219 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "home": {
+    "hello": "Hello!",
+    "intro": "I am",
+    "roles": [
+      "Wev developer",
+      "Python developer",
+      "Linux System Engineer",
+      "Continuous Learner"
+    ],
+    "cta": "Learn More",
+    "description": "Passionate about creating efficient, interactive, and seamless digital solutions.",
+    "let_me_introduce": {
+      "title": "Let Me Introduce Myself",
+      "intro": "I am an IT professional with extensive experience in developing and maintaining high-performance systems. Alongside my technical skills, I strive to learn and continuously improve.",
+"traits": "Beyond my professional expertise, I am passionate about fitness and combat sports, dedicating time to staying physically active and building resilience. I am a firm believer in lifelong learning, continuously exploring new ideas and refining my craft.",
+      "vision": "My vision is to create efficient, scalable, and user-friendly systems that bridge the gap between technology and people. Let's innovate together!"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "intro1": "I am an IT professional with extensive experience in Unix system administration, network engineering, and database management.",
+     "intro2": "Skilled in Python, PowerShell, Bash scripting, Unix/Linux, RHEL Server Systems, Oracle DB, Ansible, Puppet, SQL, and network management, I excel at automating processes to save time and reduce manual workloads. Proficient in system monitoring and deployment tools, I believe in efficiency and transparency, ensuring regular communication throughout every project. Let’s collaborate to bring your IT solutions to the next level.",
+    "sections": {
+      "skills": "Skills",
+      "experience": "Experience"
+    },
+    "skills": [
+      { "name": "Python", "description": "Automating processes and building robust tools." },
+      { "name": "PowerShell & Bash Scripting", "description": "Streamlining tasks in Windows and Unix/Linux systems." },
+      { "name": "RHEL Server Systems", "description": "Expertise in managing RHEL 7/8/9 systems, including deployment, monitoring, and maintenance." },
+      { "name": "Oracle DB & SQL", "description": "Database management and query optimization." },
+      { "name": "Ansible & Puppet", "description": "Infrastructure as Code for automated deployments." },
+      { "name": "Network Management", "description": "Routing, firewalls, and IP configuration." },
+      { "name": "Windows Server Systems", "description": "Proficient in VMware, AD, and server installations." }
+    ],
+    "experience": [
+      {
+        "title": "Unix Server / System Administrator",
+        "duration": "Swiss National Bank (1+ year)",
+        "tasks": [
+          "Managed RHEL 7/8/9 server environments, focusing on performance and security.",
+          "Developed automated scripts to streamline system administration tasks.",
+          "Implemented a Python program to manage Puppet agents on multiple servers.",
+          "Enhanced an existing Perl script to monitor LDAP attributes via the Icinga2 API."
+        ]
+      },
+      {
+        "title": "Network Engineer",
+        "duration": "Swiss National Bank (6 months)",
+        "tasks": [
+          "Hands-on experience in routing, firewalls, and IP networking technologies.",
+          "Developed a Python application that compared JSON file outputs with SQLite databases."
+        ]
+      },
+      {
+        "title": "Database Engineer",
+        "duration": "Swiss National Bank (6 months)",
+        "tasks": [
+          "Gained expertise in Oracle databases, SQL, and infrastructure management.",
+          "Created an Ansible playbook to standardize database deployment across systems."
+        ]
+      },
+      {
+        "title": "Windows Server Systems",
+        "duration": "Swiss National Bank (8 months)",
+        "tasks": [
+          "Gained proficiency in PowerShell scripting and Active Directory management.",
+          "Configured and managed Windows Server (VMware) installations.",
+          "Set up firewalls and ensured system security compliance.",
+          "Used both PowerShell scripting for cross-platform administrative tasks."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "enhancements_heading": "Enhancements",
+    "note_heading": "Note",
+    "github_link": "View on GitHub",
+    "documentation_link": "Documentation",
+    "final_project": {
+      "title": "Central Management of Puppet Agents with a Script (IPA)",
+      "description": "This project automates the management of Puppet Agents on RHEL systems and integrates LDAP, Icinga2, and scheduling systems to streamline administrative tasks.",
+      "features": [
+        "Automates enabling/disabling Puppet Agents on RHEL systems via a Python script.",
+        "Synchronizes LDAP maintenance flags with Icinga2 downtimes using a Perl script.",
+        "Logs actions for auditing and troubleshooting across both scripts.",
+        "Integrates with LDAP, Icinga2 API, and MySQL for seamless system state management.",
+        "Modular design supports extensibility and error handling."
+      ],
+      "note": "Due to data security and confidentiality, the source code and detailed documentation for this project cannot be shared."
+    },
+    "portfolio": {
+      "title": "Personal Portfolio Website (This website)",
+      "description": "A fully responsive personal portfolio website built using Next.js, Tailwind CSS, and Vercel hosting.",
+      "features": [
+        "Dynamic animations and smooth transitions for an engaging user interface.",
+        "Custom components like rotating text effects, skill bars, and project cards.",
+        "Integrated contact form with email-sending functionality via SendGrid.",
+        "Responsive design optimized for various screen sizes and devices."
+      ]
+    },
+    "improved_project": {
+      "title": "Further development of the IPA",
+      "description": "This project builds upon the original Final Exam Project, introducing additional functionality and optimizations to improve scalability, performance, and user experience.",
+      "features": [
+        "Introduced modular methods for LDAP modifications, checks, and job handling.",
+        "Integrated RESTful API calls for LDAP data retrieval, improving scalability.",
+        "Enhanced Puppet Agent management with more rigorous attribute checks.",
+        "Improved error handling and logging for better traceability.",
+        "Implemented a refined downtime extension process with date/time validation and user input validation.",
+        "Simplified task scheduling through modular helper functions."
+      ],
+      "enhancements": [
+        "Refactored core logic into modular methods imported as modules (e.g., check and ldap).",
+        "Replaced synchronous LDAP queries with REST API calls for greater flexibility.",
+        "Enhanced user input validation and error handling through check.reason and syslog logging.",
+        "Improved 'at job' scheduling with methods like at.find and at.calculate to ensure accurate timing.",
+        "Encapsulated main logic in a structured main() function, improving readability and maintainability."
+      ],
+      "note": "Due to data security and confidentiality, the source code and detailed documentation for this project cannot be shared."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "form": {
+      "sender_type": "Are you a:",
+      "individual": "Individual",
+      "firm": "Firm",
+      "firm_name": "Firm Name",
+      "name": "Your Name",
+      "recruiter_name": "Recruiter's Name",
+      "email_title": "Email Title",
+      "email_content": "Message",
+      "send": "Send Message",
+      "success": "Email sent successfully!",
+      "error": "Failed to send email. Please try again.",
+      "error_generic": "An error occurred while sending the email.",
+      "firm_name_placeholder": "Enter firm name",
+      "recruiter_name_placeholder": "Enter recruiter's name",
+      "name_placeholder": "Enter your name",
+      "email_title_placeholder": "Enter email title",
+      "email_content_placeholder": "Write your message here"
+    },
+    "preview": {
+      "to": "To:",
+      "from": "From:",
+      "subject": "Subject:",
+      "message": "Message:"
+    }
+  },
+  "resume": {
+    "name": "Arber Mahmuti",
+    "title": "Linux System Engineer",
+    "address": "Bändlistrasse 43, 8064 Zürich",
+    "phone": "+41 76 509 58 87",
+    "email": "arber.mahmuti@outlook.com",
+    "sections": {
+      "education": "Education",
+      "projects": "Projects",
+      "skills": "Skills",
+      "languages": "Languages"
+    },
+    "education": {
+      "system_engineer": {
+        "title": "System Engineer EFZ",
+        "institution": "Swiss National Bank, Zürich",
+        "duration": "August 2020 — July 2024",
+        "description": "Four-year apprenticeship gaining extensive experience across departments: Linux server systems, networking, and databases (Oracle)."
+      },
+      "tech_school": {
+        "title": "School",
+        "institution": "TBZ & BMZ, Zürich",
+        "duration": "August 2020 — July 2024"
+      }
+    },
+    "projects": [
+      {
+        "title": "Linux Server Systems (IPA)",
+        "description": "Developed centralized Puppet Agent management using Python scripts, Puppet, and Perl for LDAP attribute monitoring in Icinga2."
+      },
+      {
+        "title": "Proxy Web Frontend",
+        "description": "Integrated web frontend using an existing GitHub repository as a central website for internal IT services. Created a Python-based parser script that adjusts the web interface based on user roles."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Designed Puppet roles and classes for development server setup, including minimum requirements. Created Ansible playbooks for database configuration on cross-team systems."
+      }
+    ],
+    "skills": {
+      "list": [
+        { "name": "RHEL7/8/9 Systems", "level": 85 },
+        { "name": "Python", "level": 85 },
+        { "name": "Bash/Powershell", "level": 85 },
+        { "name": "Puppet / Ansible (IaC)", "level": 85 },
+        { "name": "Git", "level": 85 },
+        { "name": "SQL / PL SQL", "level": 65 }
+      ]
+    },
+    "languages": {
+      "list": [
+        { "name": "German", "level": 100 },
+        { "name": "English", "level": 100 },
+        { "name": "Albanian", "level": 100 },
+        { "name": "French", "level": 65 }
+      ]
+    },
+    "download": "Download Resume"
+  }
+}
