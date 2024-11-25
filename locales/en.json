@@ -100,7 +100,7 @@
     },
     "portfolio": {
       "title": "Personal Portfolio Website (This website)",
-      "description": "A fully responsive personal portfolio website built using Next.js, Tailwind CSS, and Vercel hosting.",
+      "description": "A fully responsive personal portfolio website built using Next.js, Tailwind CSS, and Netlify hosting.",
       "features": [
         "Dynamic animations and smooth transitions for an engaging user interface.",
         "Custom components like rotating text effects, skill bars, and project cards.",

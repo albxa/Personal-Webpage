@@ -100,7 +100,7 @@
     },
     "portfolio": {
       "title": "Persönliche Portfolio-Website (Diese Website)",
-      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Vercel.",
+      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Netlify.",
       "features": [
         "Dynamische Animationen und sanfte Übergänge für eine ansprechende Benutzeroberfläche.",
         "Individuelle Komponenten wie rotierende Texteffekte, Fähigkeitsleisten und Projektkarten.",
