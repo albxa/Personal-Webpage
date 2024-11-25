@@ -1,14 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  trailingSlash: false, // Optional: Set to true if you prefer URLs to always end with a slash
-  reactStrictMode: true, // Optional: Enables React's Strict Mode
+  trailingSlash: false, // Optional: Remove trailing slashes
+  reactStrictMode: true, // Enforces strict React guidelines
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "https://www.mahmuti.com",
-        permanent: false, // Set to false if you expect this to change in the future
+        source: "/", // Root URL
+        has: [
+          {
+            type: "host",
+            value: "mahmuti.com", // Redirect only if the root domain is used
+          },
+        ],
+        destination: "http://www.mahmuti.com",
+        permanent: true, // 301 redirect to www
       },
     ];
   },

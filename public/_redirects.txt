@@ -1,1 +1,2 @@
-/*    /index.html   200
+# Redirect all traffic to www
+http://mahmuti.com/* http://www.mahmuti.com/:splat 301
