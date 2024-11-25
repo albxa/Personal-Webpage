@@ -26,8 +26,8 @@ const Projects = () => {
       title: t("projects.portfolio.title"),
       description: t("projects.portfolio.description"),
       features: t("projects.portfolio.features", { returnObjects: true }),
-      github: "https://github.com/yourusername/personal-portfolio",
-      documentation: "https://github.com/yourusername/personal-portfolio/docs/README.md",
+      github: "https://github.com/albxa/Personal-Webpage/tree/main",
+      documentation: "https://github.com/albxa/Personal-Webpage/blob/main/README.md",
       images: ["/images/website-homepage.png", "/images/contact-form.png"], // Images need to be added in the future
     },
     {

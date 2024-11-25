@@ -20,9 +20,6 @@
 # production
 /build
 
-# Picture
-public/images/bild_arber.jpeg
-
 # misc
 .DS_Store
 *.pem
