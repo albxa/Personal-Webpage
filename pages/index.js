@@ -87,25 +87,20 @@ export default function Home() {
       {/* Let Me Introduce Myself Section */}
       <section
         id="introduce"
-        className="h-screen bg-gray-900 text-white px-8 py-16 flex items-center"
+        className="px-4 py-16 bg-gray-900 text-white flex flex-col md:flex-row items-center md:justify-between space-y-8 md:space-y-0"
       >
-        <div className="max-w-4xl w-1/2 space-y-6">
-          {/* Section Title */}
+        <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4">{t("home.let_me_introduce.title")}</h2>
-
-          {/* Introduction Paragraphs */}
           <p className="text-lg text-gray-300 leading-relaxed">{t("home.let_me_introduce.intro")}</p>
           <p className="text-lg text-gray-300 leading-relaxed">{t("home.let_me_introduce.traits")}</p>
           <p className="text-lg text-gray-300 leading-relaxed">{t("home.let_me_introduce.vision")}</p>
         </div>
-
-        {/* Profile Image */}
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="w-full md:w-1/2 flex items-center justify-center">
           <img
             src="/images/bild_arber.jpeg"
             alt="Arber Mahmuti"
-            className="w-64 h-64 rounded-full border-4 border-blue-500 object-cover"
-            onError={(e) => (e.target.src = "https://via.placeholder.com/150")} // Fallback for broken image
+            className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-blue-500 object-cover"
+            onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
           />
         </div>
       </section>
