@@ -1,0 +1,219 @@
+{
+  "header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "resume": "Lebenslauf",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hello": "Hallo!",
+    "intro": "Ich bin",
+    "roles": [
+      "Webentwickler",
+      "Python-Entwickler",
+      "Linux-Systemingenieur",
+      "Stetiger Lerner"
+    ],
+    "cta": "Mehr erfahren",
+    "description": "Leidenschaft für die Entwicklung effizienter, interaktiver und nahtloser digitaler Lösungen.",
+    "let_me_introduce": {
+      "title": "Wer bin ich?",
+      "intro": "Ich bin ein IT-Experte mit umfangreicher Erfahrung in der Entwicklung und Wartung von Hochleistungssystemen. Neben meinen technischen Fähigkeiten strebe ich danach, ständig zu lernen und mich kontinuierlich zu verbessern.",
+      "traits": "Neben meiner beruflichen Expertise begeistere ich mich für Fitness und Kampfsportarten und widme Zeit, um körperlich aktiv zu bleiben und Widerstandsfähigkeit aufzubauen. Ich bin fest davon überzeugt, dass lebenslanges Lernen der Schlüssel ist, um ständig neue Ideen zu entdecken und mein Handwerk zu verfeinern.",
+      "vision": "Mein Ziel ist es, effiziente, skalierbare und benutzerfreundliche Systeme zu schaffen, die die Lücke zwischen Technologie und Menschen schließen. Lassen Sie uns gemeinsam Innovationen schaffen!"
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "intro1": "Ich bin ein IT-Spezialist mit umfangreicher Erfahrung in der Unix-Systemadministration, Netzwerktechnik und Datenbankverwaltung.",
+    "intro2": "Ich bin versiert in Python, PowerShell, Bash-Scripting, Unix/Linux, RHEL Server-Systemen, Oracle DB, Ansible, Puppet, SQL und Netzwerkmanagement. Ich habe mich darauf spezialisiert, Prozesse zu automatisieren, um Zeit zu sparen und manuelle Arbeitsbelastungen zu reduzieren. Dank meiner Kenntnisse in Systemüberwachung und Deployment-Tools lege ich Wert auf Effizienz und Transparenz und gewährleiste regelmäßige Kommunikation in jedem Projekt. Lassen Sie uns zusammenarbeiten, um Ihre IT-Lösungen auf die nächste Ebene zu bringen.",
+    "sections": {
+      "skills": "Fähigkeiten",
+      "experience": "Erfahrung"
+    },
+    "skills": [
+      { "name": "Python", "description": "Automatisierung von Prozessen und Entwicklung robuster Tools." },
+      { "name": "PowerShell & Bash-Scripting", "description": "Optimierung von Aufgaben in Windows- und Unix/Linux-Systemen." },
+      { "name": "RHEL-Serversysteme", "description": "Expertise in der Verwaltung von RHEL 7/8/9-Systemen, einschließlich Bereitstellung, Überwachung und Wartung." },
+      { "name": "Oracle DB & SQL", "description": "Datenbankverwaltung und Abfrageoptimierung." },
+      { "name": "Ansible & Puppet", "description": "Infrastructure as Code für automatisierte Bereitstellungen." },
+      { "name": "Netzwerkmanagement", "description": "Routing, Firewalls und IP-Konfiguration." },
+      { "name": "Windows-Serversysteme", "description": "Erfahrung in VMware, Active Directory und Serverinstallationen." }
+    ],
+    "experience": [
+      {
+        "title": "Unix-Server-/Systemadministrator",
+        "duration": "Schweizerische Nationalbank (1+ Jahr)",
+        "tasks": [
+          "Verwaltung von RHEL 7/8/9-Serverumgebungen mit Schwerpunkt auf Leistung und Sicherheit.",
+          "Entwicklung automatisierter Skripte zur Optimierung von Systemadministrationsaufgaben.",
+          "Implementierung eines Python-Programms zur Verwaltung von Puppet-Agenten auf mehreren Servern.",
+          "Optimierung eines bestehenden Perl-Skripts zur Überwachung von LDAP-Attributen über die Icinga2-API."
+        ]
+      },
+      {
+        "title": "Netzwerktechniker",
+        "duration": "Schweizerische Nationalbank (6 Monate)",
+        "tasks": [
+          "Praktische Erfahrung in Routing, Firewalls und IP-Netzwerktechnologien.",
+          "Entwicklung einer Python-Anwendung zum Vergleich von JSON-Dateiausgaben mit SQLite-Datenbanken."
+        ]
+      },
+      {
+        "title": "Datenbanktechniker",
+        "duration": "Schweizerische Nationalbank (6 Monate)",
+        "tasks": [
+          "Erfahrung in Oracle-Datenbanken, SQL und Infrastrukturmanagement gesammelt.",
+          "Erstellung eines Ansible-Playbooks zur Standardisierung der Datenbankbereitstellung über verschiedene Systeme hinweg."
+        ]
+      },
+      {
+        "title": "Windows-Serversysteme",
+        "duration": "Schweizerische Nationalbank (8 Monate)",
+        "tasks": [
+          "Fachkenntnisse in PowerShell-Scripting und Active Directory-Management erworben.",
+          "Konfiguration und Verwaltung von Windows-Serverinstallationen (VMware).",
+          "Einrichtung von Firewalls und Sicherstellung der Einhaltung von Sicherheitsstandards.",
+          "Verwendung von PowerShell-Skripting für plattformübergreifende Verwaltungsaufgaben."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "enhancements_heading": "Verbesserungen",
+    "note_heading": "Hinweis",
+    "github_link": "Auf GitHub ansehen",
+    "documentation_link": "Dokumentation",
+    "final_project": {
+      "title": "Zentrale Verwaltung von Puppet Agents (IPA)",
+      "description": "Dieses Projekt automatisiert die Verwaltung von Puppet-Agents auf RHEL-Systemen und integriert LDAP, Icinga2 und Planungssysteme, um Verwaltungsaufgaben zu optimieren.",
+      "features": [
+        "Automatisierung der Aktivierung/Deaktivierung von Puppet-Agents auf RHEL-Systemen über ein Python-Skript.",
+        "Synchronisierung von LDAP-Wartungsflags mit Icinga2-Ausfallzeiten durch ein Perl-Skript.",
+        "Protokollierung von Aktionen zur Prüfung und Fehlersuche über beide Skripte hinweg.",
+        "Integration von LDAP, Icinga2-API und MySQL für ein nahtloses Systemmanagement.",
+        "Modulares Design unterstützt Erweiterbarkeit und Fehlerbehebung."
+      ],
+      "note": "Aufgrund von Datenschutz und Vertraulichkeit können Quellcode und detaillierte Dokumentation nicht geteilt werden."
+    },
+    "portfolio": {
+      "title": "Persönliche Portfolio-Website (Diese Website)",
+      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Vercel.",
+      "features": [
+        "Dynamische Animationen und sanfte Übergänge für eine ansprechende Benutzeroberfläche.",
+        "Individuelle Komponenten wie rotierende Texteffekte, Fähigkeitsleisten und Projektkarten.",
+        "Integriertes Kontaktformular mit E-Mail-Funktionalität über SendGrid.",
+        "Responsive Design, optimiert für verschiedene Bildschirmgrößen und Geräte."
+      ]
+    },
+    "improved_project": {
+      "title": "Weiterentwicklung der IPA",
+      "description": "Dieses Projekt baut auf dem ursprünglichen Abschlussprojekt auf und bietet zusätzliche Funktionen und Optimierungen zur Verbesserung der Skalierbarkeit, Leistung und Benutzerfreundlichkeit.",
+      "features": [
+        "Einführung modularer Methoden für LDAP-Änderungen, Prüfungen und Aufgabenverwaltung.",
+        "Integration von RESTful-API-Aufrufen zur LDAP-Datenabfrage zur Verbesserung der Skalierbarkeit.",
+        "Erweiterte Verwaltung von Puppet-Agents durch rigorosere Attributprüfungen.",
+        "Verbesserte Fehlerbehandlung und Protokollierung für bessere Nachvollziehbarkeit.",
+        "Optimierter Prozess zur Verlängerung von Ausfallzeiten mit Datums-/Zeitüberprüfung und Benutzer-Eingabevalidierung.",
+        "Vereinfachte Aufgabenplanung durch modulare Hilfsfunktionen."
+      ],
+      "enhancements": [
+        "Umstrukturierung der Kernlogik in modulare Methoden, die als Module importiert werden.",
+        "Ersetzung synchroner LDAP-Abfragen durch REST-API-Aufrufe für größere Flexibilität.",
+        "Erweiterte Benutzereingabevalidierung und Fehlerbehandlung durch syslog-Logging.",
+        "Verbesserte Aufgabenplanung mit Methoden wie at.find und at.calculate zur genauen Zeitplanung.",
+        "Kapselung der Hauptlogik in einer strukturierten main()-Funktion zur Verbesserung der Lesbarkeit und Wartbarkeit."
+      ],
+      "note": "Aufgrund von Datenschutz und Vertraulichkeit können Quellcode und detaillierte Dokumentation nicht geteilt werden."
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "form": {
+      "sender_type": "Sind Sie ein:",
+      "individual": "Einzelperson",
+      "firm": "Firma",
+      "firm_name": "Firmenname",
+      "name": "Ihr Name",
+      "recruiter_name": "Name des Recruiters",
+      "email_title": "Betreff der E-Mail",
+      "email_content": "Nachricht",
+      "send": "Nachricht senden",
+      "success": "E-Mail erfolgreich gesendet!",
+      "error": "E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "error_generic": "Beim Senden der E-Mail ist ein Fehler aufgetreten.",
+      "firm_name_placeholder": "Firmennamen eingeben",
+      "recruiter_name_placeholder": "Name des Recruiters eingeben",
+      "name_placeholder": "Geben Sie Ihren Namen ein",
+      "email_title_placeholder": "Betreff der E-Mail eingeben",
+      "email_content_placeholder": "Schreiben Sie Ihre Nachricht hier"
+    },
+    "preview": {
+      "to": "An:",
+      "from": "Von:",
+      "subject": "Betreff:",
+      "message": "Nachricht:"
+    }
+  },
+  "resume": {
+    "name": "Arber Mahmuti",
+    "title": "Systemingenieur",
+    "address": "Bändlistrasse 43, 8064 Zürich",
+    "phone": "+41 76 509 58 87",
+    "email": "arber.mahmuti@outlook.com",
+    "sections": {
+      "education": "Ausbildung",
+      "projects": "Projekte",
+      "skills": "Fähigkeiten",
+      "languages": "Sprachen"
+    },
+    "education": {
+      "system_engineer": {
+        "title": "Systemtechniker EFZ",
+        "institution": "Schweizerische Nationalbank, Zürich",
+        "duration": "August 2020 — Juli 2024",
+        "description": "Vierjährige Ausbildung mit umfassender Erfahrung in verschiedenen Abteilungen: Linux-Serversysteme, Netzwerke und Datenbanken (Oracle)."
+      },
+      "tech_school": {
+        "title": "Schule",
+        "institution": "TBZ & BMZ, Zürich",
+        "duration": "August 2020 — Juli 2024"
+      }
+    },
+    "projects": [
+      {
+        "title": "Linux-Serversysteme (IPA)",
+        "description": "Entwicklung eines zentralisierten Puppet-Agent-Managements mit Python-Skripten, Puppet und Perl zur Überwachung von LDAP-Attributen in Icinga2."
+      },
+      {
+        "title": "Proxy-Web-Frontend",
+        "description": "Integration eines Web-Frontends basierend auf einem vorhandenen GitHub-Repository als zentrale Website für interne IT-Dienste. Erstellung eines Python-Parser-Skripts, das die Weboberfläche basierend auf Benutzerrollen anpasst."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Design von Puppet-Rollen und -Klassen für die Entwicklung von Serversystemen, einschließlich Mindestanforderungen. Erstellung von Ansible-Playbooks für die Datenbankkonfiguration in bereichsübergreifenden Systemen."
+      }
+    ],
+    "skills": {
+      "list": [
+        { "name": "RHEL7/8/9-Systeme", "level": 85 },
+        { "name": "Python", "level": 85 },
+        { "name": "Bash/Powershell", "level": 85 },
+        { "name": "Puppet / Ansible (IaC)", "level": 85 },
+        { "name": "Git", "level": 85 },
+        { "name": "SQL / PL SQL", "level": 65 }
+      ]
+    },
+    "languages": {
+      "list": [
+        { "name": "Deutsch", "level": 100 },
+        { "name": "Englisch", "level": 100 },
+        { "name": "Albanisch", "level": 100 },
+        { "name": "Französisch", "level": 65 }
+      ]
+    },
+    "download": "Lebenslauf herunterladen"
+  }
+}

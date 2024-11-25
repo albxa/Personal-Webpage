@@ -1,0 +1,26 @@
+/*
+ * Arber Mahmuti
+ * Version: 1.0
+ * Date: 2024-11-24
+ * Description: Global CSS file for applying consistent styles across the application. 
+ * Configures TailwindCSS base styles, components, and utilities. Also defines global styles for background and text color.
+ */
+
+/* Import Tailwind base styles */
+@tailwind base;
+
+/* Import Tailwind component styles */
+@tailwind components;
+
+/* Import Tailwind utility styles */
+@tailwind utilities;
+
+/* Global styles for HTML and body elements */
+html, body {
+  /* Ensure a consistent dark background and white text throughout the app */
+  @apply bg-gray-900 text-white;
+
+  /* Reset default margin and padding */
+  margin: 0;
+  padding: 0;
+}
