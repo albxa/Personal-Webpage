@@ -12,18 +12,38 @@ import { useTranslation } from "react-i18next"; // For localization
 import Header from "../components/Header"; // Navigation header component
 
 export default function Home() {
+<<<<<<< HEAD
   const { t } = useTranslation(); // Translation hook
   const texts = t("home.roles", { returnObjects: true }); // Fetch roles array from translations
 
   // State management for typing animation
+=======
+  const { t, i18n } = useTranslation(); // Translation hook
+  const [texts, setTexts] = useState([]); // Localized roles for typing animation
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
   const [currentIndex, setCurrentIndex] = useState(0); // Current role being typed
   const [displayedText, setDisplayedText] = useState(""); // Current text being displayed
   const [isDeleting, setIsDeleting] = useState(false); // Whether the text is being deleted
   const [charIndex, setCharIndex] = useState(0); // Index of the current character in the role
 
+<<<<<<< HEAD
   // Typing effect logic
   useEffect(() => {
     if (texts.length === 0) return; // Guard clause for empty texts array
+=======
+  // Update the texts whenever the language changes
+  useEffect(() => {
+    setTexts(t("home.roles", { returnObjects: true }));
+    setCurrentIndex(0); // Reset to the first role
+    setDisplayedText(""); // Clear the current text
+    setCharIndex(0); // Reset the character index
+    setIsDeleting(false); // Reset deletion state
+  }, [i18n.language, t]);
+
+  // Typing effect logic
+  useEffect(() => {
+    if (!texts || texts.length === 0) return; // Guard clause for empty texts array
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
 
     const handleTyping = () => {
       const currentText = texts[currentIndex]; // Get the current role text

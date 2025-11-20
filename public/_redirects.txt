@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 # Redirect all traffic to www
 http://mahmuti.com/* http://www.mahmuti.com/:splat 301
+=======
+/*    /index.html   200
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91

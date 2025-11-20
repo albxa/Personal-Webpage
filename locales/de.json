@@ -100,7 +100,11 @@
     },
     "portfolio": {
       "title": "Persönliche Portfolio-Website (Diese Website)",
+<<<<<<< HEAD
       "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Vercel.",
+=======
+      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Netlify.",
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
       "features": [
         "Dynamische Animationen und sanfte Übergänge für eine ansprechende Benutzeroberfläche.",
         "Individuelle Komponenten wie rotierende Texteffekte, Fähigkeitsleisten und Projektkarten.",
@@ -163,6 +167,7 @@
     "address": "Bändlistrasse 43, 8064 Zürich",
     "phone": "+41 76 509 58 87",
     "email": "arber.mahmuti@outlook.com",
+<<<<<<< HEAD
 
     "sections": {
       "profile": "Profil",
@@ -310,4 +315,59 @@
     "download": "Lebenslauf herunterladen"
   } 
 
+=======
+    "sections": {
+      "education": "Ausbildung",
+      "projects": "Projekte",
+      "skills": "Fähigkeiten",
+      "languages": "Sprachen"
+    },
+    "education": {
+      "system_engineer": {
+        "title": "Systemtechniker EFZ",
+        "institution": "Schweizerische Nationalbank, Zürich",
+        "duration": "August 2020 — Juli 2024",
+        "description": "Vierjährige Ausbildung mit umfassender Erfahrung in verschiedenen Abteilungen: Linux-Serversysteme, Netzwerke und Datenbanken (Oracle)."
+      },
+      "tech_school": {
+        "title": "Schule",
+        "institution": "TBZ & BMZ, Zürich",
+        "duration": "August 2020 — Juli 2024"
+      }
+    },
+    "projects": [
+      {
+        "title": "Linux-Serversysteme (IPA)",
+        "description": "Entwicklung eines zentralisierten Puppet-Agent-Managements mit Python-Skripten, Puppet und Perl zur Überwachung von LDAP-Attributen in Icinga2."
+      },
+      {
+        "title": "Proxy-Web-Frontend",
+        "description": "Integration eines Web-Frontends basierend auf einem vorhandenen GitHub-Repository als zentrale Website für interne IT-Dienste. Erstellung eines Python-Parser-Skripts, das die Weboberfläche basierend auf Benutzerrollen anpasst."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Design von Puppet-Rollen und -Klassen für die Entwicklung von Serversystemen, einschließlich Mindestanforderungen. Erstellung von Ansible-Playbooks für die Datenbankkonfiguration in bereichsübergreifenden Systemen."
+      }
+    ],
+    "skills": {
+      "list": [
+        { "name": "RHEL7/8/9-Systeme", "level": 85 },
+        { "name": "Python", "level": 85 },
+        { "name": "Bash/Powershell", "level": 85 },
+        { "name": "Puppet / Ansible (IaC)", "level": 85 },
+        { "name": "Git", "level": 85 },
+        { "name": "SQL / PL SQL", "level": 65 }
+      ]
+    },
+    "languages": {
+      "list": [
+        { "name": "Deutsch", "level": 100 },
+        { "name": "Englisch", "level": 100 },
+        { "name": "Albanisch", "level": 100 },
+        { "name": "Französisch", "level": 65 }
+      ]
+    },
+    "download": "Lebenslauf herunterladen"
+  }
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
 }

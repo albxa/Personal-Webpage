@@ -10,7 +10,11 @@
     "hello": "Hello!",
     "intro": "I am",
     "roles": [
+<<<<<<< HEAD
       "Wev developer",
+=======
+      "Web developer",
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
       "Python developer",
       "Linux System Engineer",
       "Continuous Learner"
@@ -100,7 +104,11 @@
     },
     "portfolio": {
       "title": "Personal Portfolio Website (This website)",
+<<<<<<< HEAD
       "description": "A fully responsive personal portfolio website built using Next.js, Tailwind CSS, and Vercel hosting.",
+=======
+      "description": "A fully responsive personal portfolio website built using Next.js, Tailwind CSS, and Netlify hosting.",
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
       "features": [
         "Dynamic animations and smooth transitions for an engaging user interface.",
         "Custom components like rotating text effects, skill bars, and project cards.",
@@ -163,6 +171,7 @@
     "address": "Bändlistrasse 43, 8064 Zürich",
     "phone": "+41 76 509 58 87",
     "email": "arber.mahmuti@outlook.com",
+<<<<<<< HEAD
 
     "sections": {
       "profile": "Profile",
@@ -312,4 +321,59 @@
   }
  
  
+=======
+    "sections": {
+      "education": "Education",
+      "projects": "Projects",
+      "skills": "Skills",
+      "languages": "Languages"
+    },
+    "education": {
+      "system_engineer": {
+        "title": "System Engineer EFZ",
+        "institution": "Swiss National Bank, Zürich",
+        "duration": "August 2020 — July 2024",
+        "description": "Four-year apprenticeship gaining extensive experience across departments: Linux server systems, networking, and databases (Oracle)."
+      },
+      "tech_school": {
+        "title": "School",
+        "institution": "TBZ & BMZ, Zürich",
+        "duration": "August 2020 — July 2024"
+      }
+    },
+    "projects": [
+      {
+        "title": "Linux Server Systems (IPA)",
+        "description": "Developed centralized Puppet Agent management using Python scripts, Puppet, and Perl for LDAP attribute monitoring in Icinga2."
+      },
+      {
+        "title": "Proxy Web Frontend",
+        "description": "Integrated web frontend using an existing GitHub repository as a central website for internal IT services. Created a Python-based parser script that adjusts the web interface based on user roles."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Designed Puppet roles and classes for development server setup, including minimum requirements. Created Ansible playbooks for database configuration on cross-team systems."
+      }
+    ],
+    "skills": {
+      "list": [
+        { "name": "RHEL7/8/9 Systems", "level": 85 },
+        { "name": "Python", "level": 85 },
+        { "name": "Bash/Powershell", "level": 85 },
+        { "name": "Puppet / Ansible (IaC)", "level": 85 },
+        { "name": "Git", "level": 85 },
+        { "name": "SQL / PL SQL", "level": 65 }
+      ]
+    },
+    "languages": {
+      "list": [
+        { "name": "German", "level": 100 },
+        { "name": "English", "level": 100 },
+        { "name": "Albanian", "level": 100 },
+        { "name": "French", "level": 65 }
+      ]
+    },
+    "download": "Download Resume"
+  }
+>>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
 }
