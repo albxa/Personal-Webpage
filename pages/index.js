@@ -7,94 +7,77 @@
  * The content is localized using react-i18next.
  */
 
-import { useState, useEffect } from "react"; // React hooks for state and lifecycle
-import { useTranslation } from "react-i18next"; // For localization
-import Header from "../components/Header"; // Navigation header component
+import { useState, useEffect } from "react"; 
+import { useTranslation } from "react-i18next";
+import Header from "../components/Header";
 
 export default function Home() {
-<<<<<<< HEAD
-  const { t } = useTranslation(); // Translation hook
-  const texts = t("home.roles", { returnObjects: true }); // Fetch roles array from translations
+  const { t, i18n } = useTranslation();
+  const [texts, setTexts] = useState([]); 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [charIndex, setCharIndex] = useState(0);
 
-  // State management for typing animation
-=======
-  const { t, i18n } = useTranslation(); // Translation hook
-  const [texts, setTexts] = useState([]); // Localized roles for typing animation
->>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
-  const [currentIndex, setCurrentIndex] = useState(0); // Current role being typed
-  const [displayedText, setDisplayedText] = useState(""); // Current text being displayed
-  const [isDeleting, setIsDeleting] = useState(false); // Whether the text is being deleted
-  const [charIndex, setCharIndex] = useState(0); // Index of the current character in the role
-
-<<<<<<< HEAD
-  // Typing effect logic
+  // Update texts when language changes
   useEffect(() => {
-    if (texts.length === 0) return; // Guard clause for empty texts array
-=======
-  // Update the texts whenever the language changes
-  useEffect(() => {
-    setTexts(t("home.roles", { returnObjects: true }));
-    setCurrentIndex(0); // Reset to the first role
-    setDisplayedText(""); // Clear the current text
-    setCharIndex(0); // Reset the character index
-    setIsDeleting(false); // Reset deletion state
+    const newTexts = t("home.roles", { returnObjects: true });
+    setTexts(newTexts || []);
+    setCurrentIndex(0);
+    setDisplayedText("");
+    setCharIndex(0);
+    setIsDeleting(false);
   }, [i18n.language, t]);
 
-  // Typing effect logic
+  // Typing / deleting animation
   useEffect(() => {
-    if (!texts || texts.length === 0) return; // Guard clause for empty texts array
->>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
+    if (!texts || texts.length === 0) return;
 
     const handleTyping = () => {
-      const currentText = texts[currentIndex]; // Get the current role text
+      const currentText = texts[currentIndex];
 
       if (!isDeleting) {
-        // Typing forward
         if (charIndex < currentText.length) {
-          setDisplayedText((prev) => prev + currentText[charIndex]); // Add next character
-          setCharIndex((prev) => prev + 1); // Increment character index
+          setDisplayedText((prev) => prev + currentText[charIndex]);
+          setCharIndex((prev) => prev + 1);
         } else {
-          // Pause before starting to delete
           setTimeout(() => setIsDeleting(true), 1000);
         }
       } else {
-        // Deleting backward
         if (charIndex > 0) {
-          setDisplayedText((prev) => prev.slice(0, -1)); // Remove last character
-          setCharIndex((prev) => prev - 1); // Decrement character index
+          setDisplayedText((prev) => prev.slice(0, -1));
+          setCharIndex((prev) => prev - 1);
         } else {
-          // Move to the next role
           setIsDeleting(false);
-          setCurrentIndex((prev) => (prev + 1) % texts.length); // Cycle through roles
+          setCurrentIndex((prev) => (prev + 1) % texts.length);
         }
       }
     };
 
-    const interval = setInterval(handleTyping, isDeleting ? 100 : 150); // Adjust speed for typing/deleting
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [charIndex, isDeleting, texts, currentIndex]);
+    const speed = isDeleting ? 100 : 150;
+    const interval = setInterval(handleTyping, speed);
+
+    return () => clearInterval(interval);
+  }, [texts, currentIndex, charIndex, isDeleting]);
 
   return (
     <div>
-      {/* Full-Screen Hero Section */}
+      {/* Hero Section */}
       <div className="h-screen bg-gray-800 flex flex-col items-center justify-center text-center text-white">
-        <Header /> {/* Navigation Header */}
+        <Header />
         <div className="space-y-4">
-          {/* Greeting */}
           <p className="text-3xl font-semibold">{t("home.hello")}</p>
 
-          {/* Introduction */}
           <p className="text-4xl font-bold">
             {t("home.intro")} <span className="text-blue-500">Arber Mahmuti</span>
           </p>
 
-          {/* Typing animation */}
-          <p className="text-2xl text-blue-400 h-[2rem]">{displayedText || <span>&nbsp;</span>}</p>
+          <p className="text-2xl text-blue-400 h-[2rem]">
+            {displayedText || <span>&nbsp;</span>}
+          </p>
 
-          {/* Brief Description */}
           <p className="text-lg mt-4">{t("home.description")}</p>
 
-          {/* Call-to-Action Button */}
           <a
             href="#introduce"
             className="inline-block py-3 px-8 border border-blue-500 text-blue-500 font-bold text-lg tracking-wide rounded-lg hover:bg-blue-500 hover:text-gray-800 transition duration-300 mt-8"
@@ -104,7 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Let Me Introduce Myself Section */}
+      {/* Introduction Section */}
       <section
         id="introduce"
         className="px-4 py-16 bg-gray-900 text-white flex flex-col md:flex-row items-center md:justify-between space-y-8 md:space-y-0"
@@ -115,6 +98,7 @@ export default function Home() {
           <p className="text-lg text-gray-300 leading-relaxed">{t("home.let_me_introduce.traits")}</p>
           <p className="text-lg text-gray-300 leading-relaxed">{t("home.let_me_introduce.vision")}</p>
         </div>
+
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <img
             src="/images/bild_arber.jpeg"

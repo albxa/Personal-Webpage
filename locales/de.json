@@ -46,36 +46,35 @@
         "title": "Unix-Server-/Systemadministrator",
         "duration": "Schweizerische Nationalbank (1+ Jahr)",
         "tasks": [
-          "Verwaltung von RHEL 7/8/9-Serverumgebungen mit Schwerpunkt auf Leistung und Sicherheit.",
-          "Entwicklung automatisierter Skripte zur Optimierung von Systemadministrationsaufgaben.",
-          "Implementierung eines Python-Programms zur Verwaltung von Puppet-Agenten auf mehreren Servern.",
-          "Optimierung eines bestehenden Perl-Skripts zur Überwachung von LDAP-Attributen über die Icinga2-API."
+          "Verwaltung von RHEL 7/8/9-Serverumgebungen.",
+          "Entwicklung automatisierter Skripte.",
+          "Implementierung eines Python-Programms für Puppet-Agent-Management.",
+          "Optimierung eines Perl-Skripts zur LDAP-/Icinga2-Überwachung."
         ]
       },
       {
         "title": "Netzwerktechniker",
         "duration": "Schweizerische Nationalbank (6 Monate)",
         "tasks": [
-          "Praktische Erfahrung in Routing, Firewalls und IP-Netzwerktechnologien.",
-          "Entwicklung einer Python-Anwendung zum Vergleich von JSON-Dateiausgaben mit SQLite-Datenbanken."
+          "Erfahrung in Routing, Firewalls und Netzwerken.",
+          "Entwicklung einer Python SQLite/JSON Vergleichs-App."
         ]
       },
       {
         "title": "Datenbanktechniker",
         "duration": "Schweizerische Nationalbank (6 Monate)",
         "tasks": [
-          "Erfahrung in Oracle-Datenbanken, SQL und Infrastrukturmanagement gesammelt.",
-          "Erstellung eines Ansible-Playbooks zur Standardisierung der Datenbankbereitstellung über verschiedene Systeme hinweg."
+          "Erfahrung in Oracle, SQL, DB-Infrastruktur.",
+          "Ansible-Playbook zur DB-Bereitstellung entwickelt."
         ]
       },
       {
         "title": "Windows-Serversysteme",
         "duration": "Schweizerische Nationalbank (8 Monate)",
         "tasks": [
-          "Fachkenntnisse in PowerShell-Scripting und Active Directory-Management erworben.",
-          "Konfiguration und Verwaltung von Windows-Serverinstallationen (VMware).",
-          "Einrichtung von Firewalls und Sicherstellung der Einhaltung von Sicherheitsstandards.",
-          "Verwendung von PowerShell-Skripting für plattformübergreifende Verwaltungsaufgaben."
+          "PowerShell-Scripting & Active Directory.",
+          "VMware Serveradministration.",
+          "Firewall-Setup & Sicherheitsmanagement."
         ]
       }
     ]
@@ -88,49 +87,44 @@
     "documentation_link": "Dokumentation",
     "final_project": {
       "title": "Zentrale Verwaltung von Puppet Agents (IPA)",
-      "description": "Dieses Projekt automatisiert die Verwaltung von Puppet-Agents auf RHEL-Systemen und integriert LDAP, Icinga2 und Planungssysteme, um Verwaltungsaufgaben zu optimieren.",
+      "description": "Automatisiertes Management von Puppet Agents auf RHEL-Systemen.",
       "features": [
-        "Automatisierung der Aktivierung/Deaktivierung von Puppet-Agents auf RHEL-Systemen über ein Python-Skript.",
-        "Synchronisierung von LDAP-Wartungsflags mit Icinga2-Ausfallzeiten durch ein Perl-Skript.",
-        "Protokollierung von Aktionen zur Prüfung und Fehlersuche über beide Skripte hinweg.",
-        "Integration von LDAP, Icinga2-API und MySQL für ein nahtloses Systemmanagement.",
-        "Modulares Design unterstützt Erweiterbarkeit und Fehlerbehebung."
+        "Automatische Aktivierung/Deaktivierung von Puppet Agents.",
+        "LDAP ↔ Icinga2 Synchronisation.",
+        "Logging für Auditing.",
+        "Integration von LDAP, Icinga2 API und MySQL.",
+        "Modulares, erweiterbares Design."
       ],
-      "note": "Aufgrund von Datenschutz und Vertraulichkeit können Quellcode und detaillierte Dokumentation nicht geteilt werden."
+      "note": "Aufgrund von Vertraulichkeit kann der Code nicht geteilt werden."
     },
     "portfolio": {
       "title": "Persönliche Portfolio-Website (Diese Website)",
-<<<<<<< HEAD
-      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Vercel.",
-=======
-      "description": "Eine vollständig responsive persönliche Portfolio-Website, erstellt mit Next.js, Tailwind CSS und gehostet auf Netlify.",
->>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
+      "description": "Vollständig responsive Portfolio-Website mit Next.js & Tailwind CSS.",
       "features": [
-        "Dynamische Animationen und sanfte Übergänge für eine ansprechende Benutzeroberfläche.",
-        "Individuelle Komponenten wie rotierende Texteffekte, Fähigkeitsleisten und Projektkarten.",
-        "Integriertes Kontaktformular mit E-Mail-Funktionalität über SendGrid.",
-        "Responsive Design, optimiert für verschiedene Bildschirmgrößen und Geräte."
+        "Animations-basierte UI.",
+        "Custom Komponenten.",
+        "SendGrid Kontaktformular.",
+        "Mobile-Optimierung."
       ]
     },
     "improved_project": {
       "title": "Weiterentwicklung der IPA",
-      "description": "Dieses Projekt baut auf dem ursprünglichen Abschlussprojekt auf und bietet zusätzliche Funktionen und Optimierungen zur Verbesserung der Skalierbarkeit, Leistung und Benutzerfreundlichkeit.",
+      "description": "Optimierung & Erweiterung der ursprünglichen Abschlussarbeit.",
       "features": [
-        "Einführung modularer Methoden für LDAP-Änderungen, Prüfungen und Aufgabenverwaltung.",
-        "Integration von RESTful-API-Aufrufen zur LDAP-Datenabfrage zur Verbesserung der Skalierbarkeit.",
-        "Erweiterte Verwaltung von Puppet-Agents durch rigorosere Attributprüfungen.",
-        "Verbesserte Fehlerbehandlung und Protokollierung für bessere Nachvollziehbarkeit.",
-        "Optimierter Prozess zur Verlängerung von Ausfallzeiten mit Datums-/Zeitüberprüfung und Benutzer-Eingabevalidierung.",
-        "Vereinfachte Aufgabenplanung durch modulare Hilfsfunktionen."
+        "Modulare LDAP-/Agentenverwaltung.",
+        "REST API LDAP-Abfragen.",
+        "Erweitertes Error-Handling.",
+        "Optimierter Downtime-Prozess.",
+        "Modulare Scheduler-Funktionen."
       ],
       "enhancements": [
-        "Umstrukturierung der Kernlogik in modulare Methoden, die als Module importiert werden.",
-        "Ersetzung synchroner LDAP-Abfragen durch REST-API-Aufrufe für größere Flexibilität.",
-        "Erweiterte Benutzereingabevalidierung und Fehlerbehandlung durch syslog-Logging.",
-        "Verbesserte Aufgabenplanung mit Methoden wie at.find und at.calculate zur genauen Zeitplanung.",
-        "Kapselung der Hauptlogik in einer strukturierten main()-Funktion zur Verbesserung der Lesbarkeit und Wartbarkeit."
+        "Refactoring in Module.",
+        "REST statt synchronem LDAP.",
+        "Verbessertes syslog-Logging.",
+        "Exakte 'at job' Kalkulation.",
+        "Strukturierte main()-Funktion."
       ],
-      "note": "Aufgrund von Datenschutz und Vertraulichkeit können Quellcode und detaillierte Dokumentation nicht geteilt werden."
+      "note": "Vertrauliche Inhalte, daher nicht öffentlich."
     }
   },
   "contact": {
@@ -146,13 +140,13 @@
       "email_content": "Nachricht",
       "send": "Nachricht senden",
       "success": "E-Mail erfolgreich gesendet!",
-      "error": "E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
-      "error_generic": "Beim Senden der E-Mail ist ein Fehler aufgetreten.",
+      "error": "E-Mail konnte nicht gesendet werden.",
+      "error_generic": "Ein Fehler ist aufgetreten.",
       "firm_name_placeholder": "Firmennamen eingeben",
-      "recruiter_name_placeholder": "Name des Recruiters eingeben",
-      "name_placeholder": "Geben Sie Ihren Namen ein",
-      "email_title_placeholder": "Betreff der E-Mail eingeben",
-      "email_content_placeholder": "Schreiben Sie Ihre Nachricht hier"
+      "recruiter_name_placeholder": "Name eingeben",
+      "name_placeholder": "Name eingeben",
+      "email_title_placeholder": "Betreff eingeben",
+      "email_content_placeholder": "Nachricht eingeben"
     },
     "preview": {
       "to": "An:",
@@ -167,8 +161,6 @@
     "address": "Bändlistrasse 43, 8064 Zürich",
     "phone": "+41 76 509 58 87",
     "email": "arber.mahmuti@outlook.com",
-<<<<<<< HEAD
-
     "sections": {
       "profile": "Profil",
       "experience": "Berufserfahrung",
@@ -177,9 +169,7 @@
       "projects": "Projekte",
       "languages": "Sprachen"
     },
-
-    "profile": "IT System Engineer & Supporter mit Erfahrung in Windows-, Linux- und Azure-Umgebungen. Fokus auf Automatisierung, Fehlersuche, Microsoft 365, Active Directory und stabile IT-Prozesse. Leidenschaft für Automatisierung, saubere Dokumentation und zuverlässige Infrastrukturen.",
-
+    "profile": "IT System Engineer & Supporter mit Erfahrung in Windows-, Linux- und Azure-Umgebungen. Fokus auf Automatisierung, Fehlersuche, Microsoft 365, Active Directory und stabile IT-Prozesse.",
     "experience": [
       {
         "company": "NetData AG",
@@ -187,13 +177,13 @@
         "role": "IT System Engineer & Supporter",
         "period": "Februar 2025 – Jetzt",
         "tasks": [
-          "1st & 2nd Level Support per Telefon, E-Mail, Remote und On-Site.",
-          "Verwaltung von Microsoft 365, Exchange und Active Directory.",
-          "Entwicklung kundenspezifischer Powershell-Automatisierungen.",
-          "Fehleranalyse bei Windows-Client-, AD- und Netzwerkproblemen.",
-          "Planung & Umsetzung einer kompletten NAS-Umstrukturierung.",
-          "Dokumentation, Ticketbearbeitung und Kundenberatung.",
-          "Betrieb und Erweiterung eines DokuWiki-Wissenssystems."
+          "1st & 2nd Level Support.",
+          "Microsoft 365, Exchange & AD Verwaltung.",
+          "PowerShell Automatisierungen.",
+          "Windows / AD Troubleshooting.",
+          "NAS-Migration geplant & umgesetzt.",
+          "Dokumentation & Kundenberatung.",
+          "DokuWiki Knowledge Base Betrieb."
         ]
       },
       {
@@ -202,17 +192,16 @@
         "role": "Systemtechniker EFZ",
         "period": "August 2020 – Juli 2024",
         "tasks": [
-          "Administration von RHEL- und Windows-Systemlandschaften.",
-          "Automatisierungen mittels Python, Bash und PowerShell.",
-          "Entwicklung eines Python-basierten Web-Rollensystems (200+ User).",
-          "Konfigurationsmanagement mit Puppet, Ansible und GitLab.",
-          "Monitoring und Troubleshooting mit Icinga2.",
-          "Mitarbeit in Netzwerk-, Server-, Support- und Datacenter-Teams.",
-          "Analyse und Einrichtung von LAN/WLAN/VPN-Netzwerkumgebungen."
+          "RHEL- & Windows-Systemadministration.",
+          "Automatisierung mit Python, Bash & PowerShell.",
+          "Python Web-Rollen-System (200+ User).",
+          "Konfigurationsmanagement mit Puppet & Ansible.",
+          "Monitoring mit Icinga2.",
+          "Arbeit in Netzwerk-, Server-, Support- & DC-Teams.",
+          "LAN/WLAN/VPN Analyse & Setup."
         ]
       }
     ],
-
     "education": [
       {
         "title": "Berufsmaturitätsschule Zürich",
@@ -226,7 +215,7 @@
         "description": "Gesamtnote: 5.1"
       },
       {
-        "title": "Rekrutenschule (Militär)",
+        "title": "Rekrutenschule",
         "institution": "Schweiz",
         "period": "Juli 2025 – Oktober 2025"
       },
@@ -236,7 +225,6 @@
         "period": "September 2025 – Jetzt"
       }
     ],
-
     "skills": {
       "list": [
         "Python",
@@ -245,11 +233,9 @@
         "SQL / PL-SQL",
         "Java",
         "JavaScript",
-
         "Next.js",
         "React",
         "Tailwind CSS",
-
         "Git / GitLab",
         "RHEL 7/8/9",
         "Microsoft 365 / Exchange",
@@ -263,46 +249,44 @@
         "Veeam Backup"
       ]
     },
-
     "projects": [
       {
-        "title": "Linux-Serversysteme (IPA)",
-        "description": "Entwicklung eines zentralen Management-Systems für Puppet Agents auf RHEL-Systemen.",
-        "tech": "Python, Puppet, Perl, LDAP, Icinga2",
-        "period": "2024"
-      },
-      {
-        "title": "Proxy Web-Frontend",
-        "description": "Integration eines Web-Frontends für interne Dienste inkl. Python-Parser basierend auf Benutzerrollen.",
-        "tech": "Python, HTML/CSS, Linux, ACL",
-        "period": "2023"
-      },
-      {
-        "title": "Infrastructure as Code",
-        "description": "Entwicklung von Puppet-Rollen und Ansible-Playbooks für Server-Deployments.",
-        "tech": "Puppet, Ansible, GitLab",
-        "period": "2023"
-      },
-      {
         "title": "Prozessautomatisierung",
-        "description": "Automatisierte Passwort-Policy-Checks inkl. LDAP-Abfragen & SMTP-Reminder.",
+        "description": "Automatisierte Passwortüberprüfung inkl. LDAP-Abfragen & SMTP.",
         "tech": "PowerShell, Active Directory",
         "period": "Juni 2025"
       },
       {
         "title": "DokuWiki Knowledge Base",
-        "description": "Implementierung eines DokuWiki-Servers inkl. ACL, Automation & Backups.",
+        "description": "Implementierung eines strukturierten Wissenssystems.",
         "tech": "Linux, Bash, Python, Apache, MariaDB",
         "period": "Februar 2025 – März 2025"
       },
       {
         "title": "Persönliche Portfolio Website",
-        "description": "Komplett responsive Portfolio-Website mit Animationen und Kontaktformular.",
+        "description": "Responsive Portfolio-Website mit Kontaktformular.",
         "tech": "Next.js, React, Tailwind CSS",
         "period": "November 2024"
+      },
+      {
+        "title": "Linux-Serversysteme (IPA)",
+        "description": "Zentrales Management für Puppet Agents.",
+        "tech": "Python, Puppet, Perl, LDAP, Icinga2",
+        "period": "2024"
+      },
+      {
+        "title": "Proxy Web-Frontend",
+        "description": "Zentrales Web-Frontend für interne Dienste.",
+        "tech": "Python, HTML/CSS, Linux, ACL",
+        "period": "2023"
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Puppet Rollen & Ansible Playbooks.",
+        "tech": "Puppet, Ansible, GitLab",
+        "period": "2023"
       }
-    ]
-,
+    ],
     "languages": {
       "list": [
         { "name": "Deutsch", "level": "Muttersprache" },
@@ -311,63 +295,6 @@
         { "name": "Französisch", "level": "Mittel" }
       ]
     },
-
-    "download": "Lebenslauf herunterladen"
-  } 
-
-=======
-    "sections": {
-      "education": "Ausbildung",
-      "projects": "Projekte",
-      "skills": "Fähigkeiten",
-      "languages": "Sprachen"
-    },
-    "education": {
-      "system_engineer": {
-        "title": "Systemtechniker EFZ",
-        "institution": "Schweizerische Nationalbank, Zürich",
-        "duration": "August 2020 — Juli 2024",
-        "description": "Vierjährige Ausbildung mit umfassender Erfahrung in verschiedenen Abteilungen: Linux-Serversysteme, Netzwerke und Datenbanken (Oracle)."
-      },
-      "tech_school": {
-        "title": "Schule",
-        "institution": "TBZ & BMZ, Zürich",
-        "duration": "August 2020 — Juli 2024"
-      }
-    },
-    "projects": [
-      {
-        "title": "Linux-Serversysteme (IPA)",
-        "description": "Entwicklung eines zentralisierten Puppet-Agent-Managements mit Python-Skripten, Puppet und Perl zur Überwachung von LDAP-Attributen in Icinga2."
-      },
-      {
-        "title": "Proxy-Web-Frontend",
-        "description": "Integration eines Web-Frontends basierend auf einem vorhandenen GitHub-Repository als zentrale Website für interne IT-Dienste. Erstellung eines Python-Parser-Skripts, das die Weboberfläche basierend auf Benutzerrollen anpasst."
-      },
-      {
-        "title": "Infrastructure as Code",
-        "description": "Design von Puppet-Rollen und -Klassen für die Entwicklung von Serversystemen, einschließlich Mindestanforderungen. Erstellung von Ansible-Playbooks für die Datenbankkonfiguration in bereichsübergreifenden Systemen."
-      }
-    ],
-    "skills": {
-      "list": [
-        { "name": "RHEL7/8/9-Systeme", "level": 85 },
-        { "name": "Python", "level": 85 },
-        { "name": "Bash/Powershell", "level": 85 },
-        { "name": "Puppet / Ansible (IaC)", "level": 85 },
-        { "name": "Git", "level": 85 },
-        { "name": "SQL / PL SQL", "level": 65 }
-      ]
-    },
-    "languages": {
-      "list": [
-        { "name": "Deutsch", "level": 100 },
-        { "name": "Englisch", "level": 100 },
-        { "name": "Albanisch", "level": 100 },
-        { "name": "Französisch", "level": 65 }
-      ]
-    },
     "download": "Lebenslauf herunterladen"
   }
->>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
 }
