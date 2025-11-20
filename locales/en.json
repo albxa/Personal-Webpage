@@ -163,57 +163,153 @@
     "address": "Bändlistrasse 43, 8064 Zürich",
     "phone": "+41 76 509 58 87",
     "email": "arber.mahmuti@outlook.com",
+
     "sections": {
+      "profile": "Profile",
+      "experience": "Work Experience",
       "education": "Education",
-      "projects": "Projects",
       "skills": "Skills",
+      "projects": "Projects",
       "languages": "Languages"
     },
-    "education": {
-      "system_engineer": {
-        "title": "System Engineer EFZ",
-        "institution": "Swiss National Bank, Zürich",
-        "duration": "August 2020 — July 2024",
-        "description": "Four-year apprenticeship gaining extensive experience across departments: Linux server systems, networking, and databases (Oracle)."
+
+    "profile": "IT System Engineer & Supporter with experience in Windows, Linux, Azure, Microsoft 365, automation and customer-focused IT processes. Passionate about stable infrastructure, automation, efficiency and clean documentation.",
+
+    "experience": [
+      {
+        "company": "NetData AG",
+        "location": "Zürich",
+        "role": "IT System Engineer & Supporter",
+        "period": "February 2025 – Present",
+        "tasks": [
+          "1st & 2nd level support (phone, email, remote, on-site).",
+          "Managing Microsoft 365, Exchange and Active Directory.",
+          "Developing custom PowerShell automation scripts.",
+          "Troubleshooting Windows client, AD and network-related issues.",
+          "Planning & implementing a full NAS restructuring and migration.",
+          "Documentation, ticket handling and customer consultation.",
+          "Operating and extending a DokuWiki knowledge base system."
+        ]
       },
-      "tech_school": {
-        "title": "School",
-        "institution": "TBZ & BMZ, Zürich",
-        "duration": "August 2020 — July 2024"
+      {
+        "company": "Swiss National Bank",
+        "location": "Zürich",
+        "role": "System Engineer Apprentice",
+        "period": "August 2020 – July 2024",
+        "tasks": [
+          "Administered RHEL and Windows infrastructure systems.",
+          "Automation using Python, Bash and PowerShell.",
+          "Developed a Python-based Web Role system for 200+ internal users.",
+          "Configuration management using Puppet, Ansible and GitLab.",
+          "Monitoring, alerting and troubleshooting using Icinga2.",
+          "Worked across networking, server, support and datacenter teams.",
+          "Configured and analyzed LAN/WLAN/VPN networks."
+        ]
       }
+    ],
+
+    "education": [
+      {
+        "title": "Vocational Baccalaureate School Zurich",
+        "institution": "BMZ",
+        "period": "August 2024 – July 2025"
+      },
+      {
+        "title": "System Engineer EFZ",
+        "institution": "Swiss National Bank",
+        "period": "August 2020 – July 2024",
+        "description": "Final grade: 5.1"
+      },
+      {
+        "title": "Recruit School (Military)",
+        "institution": "Switzerland",
+        "period": "July 2025 – October 2025"
+      },
+      {
+        "title": "BSc Computer Science",
+        "institution": "ZHAW",
+        "period": "September 2025 – Present"
+      }
+    ],
+
+    "skills": {
+      "list": [
+        "Python",
+        "Bash",
+        "PowerShell",
+        "SQL / PL-SQL",
+        "Java",
+        "JavaScript",
+
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+
+        "Git / GitLab",
+        "RHEL 7/8/9",
+        "Microsoft 365 / Exchange",
+        "Active Directory / LDAP",
+        "Puppet",
+        "Ansible",
+        "NAS Systems",
+        "Windows Server",
+        "Linux Server Administration",
+        "Icinga2 Monitoring",
+        "Veeam Backup"
+      ]
     },
+
     "projects": [
       {
+        "title": "Process Automation",
+        "description": "Automated password policy checks using LDAP queries and SMTP reminders.",
+        "tech": "PowerShell, Active Directory",
+        "period": "June 2025"
+      },
+      {
+        "title": "DokuWiki Knowledge Base",
+        "description": "Implemented a DokuWiki server including ACL, automation and backup system.",
+        "tech": "Linux, Bash, Python, Apache, MariaDB",
+        "period": "February 2025 – March 2025"
+      },
+      {
+        "title": "Personal Portfolio Website",
+        "description": "Responsive portfolio website with animations and Netlify deployment.",
+        "tech": "Next.js, React, Tailwind CSS",
+        "period": "November 2024"
+      },
+      {
         "title": "Linux Server Systems (IPA)",
-        "description": "Developed centralized Puppet Agent management using Python scripts, Puppet, and Perl for LDAP attribute monitoring in Icinga2."
+        "description": "Developed a central management system for Puppet Agents on RHEL systems.",
+        "tech": "Python, Puppet, Perl, LDAP, Icinga2",
+        "period": "2024"
       },
       {
         "title": "Proxy Web Frontend",
-        "description": "Integrated web frontend using an existing GitHub repository as a central website for internal IT services. Created a Python-based parser script that adjusts the web interface based on user roles."
+        "description": "Integrated a web frontend for internal services with a Python-based parser for user role specific customization.",
+        "tech": "Python, HTML/CSS, Linux, ACL",
+        "period": "2023"
       },
       {
         "title": "Infrastructure as Code",
-        "description": "Designed Puppet roles and classes for development server setup, including minimum requirements. Created Ansible playbooks for database configuration on cross-team systems."
+        "description": "Developed Puppet roles and Ansible playbooks for server deployments.",
+        "tech": "Puppet, Ansible, GitLab",
+        "period": "2023"
       }
-    ],
-    "skills": {
-      "list": [
-        { "name": "RHEL7/8/9 Systems", "level": 85 },
-        { "name": "Python", "level": 85 },
-        { "name": "Bash/Powershell", "level": 85 },
-        { "name": "Puppet / Ansible (IaC)", "level": 85 },
-        { "name": "Git", "level": 85 },
-        { "name": "SQL / PL SQL", "level": 65 }
-      ]
-    },
+    ]
+,
+
     "languages": {
       "list": [
-        { "name": "German", "level": 100 },
-        { "name": "English", "level": 100 },
-        { "name": "Albanian", "level": 100 },
-        { "name": "French", "level": 65 }
+        { "name": "German", "level": "Native" },
+        { "name": "English", "level": "Fluent" },
+        { "name": "Albanian", "level": "Native" },
+        { "name": "French", "level": "Intermediate" }
       ]
     },
+
     "download": "Download Resume"
   }
+ 
+ 
 }

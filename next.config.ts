@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
             value: "mahmuti.com", // Redirect only if the root domain is used
           },
         ],
-        destination: "http://www.mahmuti.com",
+        destination: "https://www.mahmuti.com",
         permanent: true, // 301 redirect to www
       },
     ];

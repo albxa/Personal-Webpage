@@ -163,57 +163,151 @@
     "address": "Bändlistrasse 43, 8064 Zürich",
     "phone": "+41 76 509 58 87",
     "email": "arber.mahmuti@outlook.com",
+
     "sections": {
+      "profile": "Profil",
+      "experience": "Berufserfahrung",
       "education": "Ausbildung",
-      "projects": "Projekte",
       "skills": "Fähigkeiten",
+      "projects": "Projekte",
       "languages": "Sprachen"
     },
-    "education": {
-      "system_engineer": {
-        "title": "Systemtechniker EFZ",
-        "institution": "Schweizerische Nationalbank, Zürich",
-        "duration": "August 2020 — Juli 2024",
-        "description": "Vierjährige Ausbildung mit umfassender Erfahrung in verschiedenen Abteilungen: Linux-Serversysteme, Netzwerke und Datenbanken (Oracle)."
+
+    "profile": "IT System Engineer & Supporter mit Erfahrung in Windows-, Linux- und Azure-Umgebungen. Fokus auf Automatisierung, Fehlersuche, Microsoft 365, Active Directory und stabile IT-Prozesse. Leidenschaft für Automatisierung, saubere Dokumentation und zuverlässige Infrastrukturen.",
+
+    "experience": [
+      {
+        "company": "NetData AG",
+        "location": "Zürich",
+        "role": "IT System Engineer & Supporter",
+        "period": "Februar 2025 – Jetzt",
+        "tasks": [
+          "1st & 2nd Level Support per Telefon, E-Mail, Remote und On-Site.",
+          "Verwaltung von Microsoft 365, Exchange und Active Directory.",
+          "Entwicklung kundenspezifischer Powershell-Automatisierungen.",
+          "Fehleranalyse bei Windows-Client-, AD- und Netzwerkproblemen.",
+          "Planung & Umsetzung einer kompletten NAS-Umstrukturierung.",
+          "Dokumentation, Ticketbearbeitung und Kundenberatung.",
+          "Betrieb und Erweiterung eines DokuWiki-Wissenssystems."
+        ]
       },
-      "tech_school": {
-        "title": "Schule",
-        "institution": "TBZ & BMZ, Zürich",
-        "duration": "August 2020 — Juli 2024"
+      {
+        "company": "Schweizerische Nationalbank",
+        "location": "Zürich",
+        "role": "Systemtechniker EFZ",
+        "period": "August 2020 – Juli 2024",
+        "tasks": [
+          "Administration von RHEL- und Windows-Systemlandschaften.",
+          "Automatisierungen mittels Python, Bash und PowerShell.",
+          "Entwicklung eines Python-basierten Web-Rollensystems (200+ User).",
+          "Konfigurationsmanagement mit Puppet, Ansible und GitLab.",
+          "Monitoring und Troubleshooting mit Icinga2.",
+          "Mitarbeit in Netzwerk-, Server-, Support- und Datacenter-Teams.",
+          "Analyse und Einrichtung von LAN/WLAN/VPN-Netzwerkumgebungen."
+        ]
       }
+    ],
+
+    "education": [
+      {
+        "title": "Berufsmaturitätsschule Zürich",
+        "institution": "BMZ",
+        "period": "August 2024 – Juli 2025"
+      },
+      {
+        "title": "Systemtechniker EFZ",
+        "institution": "Schweizerische Nationalbank",
+        "period": "August 2020 – Juli 2024",
+        "description": "Gesamtnote: 5.1"
+      },
+      {
+        "title": "Rekrutenschule (Militär)",
+        "institution": "Schweiz",
+        "period": "Juli 2025 – Oktober 2025"
+      },
+      {
+        "title": "BSc Informatik",
+        "institution": "ZHAW",
+        "period": "September 2025 – Jetzt"
+      }
+    ],
+
+    "skills": {
+      "list": [
+        "Python",
+        "Bash",
+        "PowerShell",
+        "SQL / PL-SQL",
+        "Java",
+        "JavaScript",
+
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+
+        "Git / GitLab",
+        "RHEL 7/8/9",
+        "Microsoft 365 / Exchange",
+        "Active Directory / LDAP",
+        "Puppet",
+        "Ansible",
+        "NAS-Systeme",
+        "Windows Server",
+        "Linux Server Administration",
+        "Icinga2 Monitoring",
+        "Veeam Backup"
+      ]
     },
+
     "projects": [
       {
         "title": "Linux-Serversysteme (IPA)",
-        "description": "Entwicklung eines zentralisierten Puppet-Agent-Managements mit Python-Skripten, Puppet und Perl zur Überwachung von LDAP-Attributen in Icinga2."
+        "description": "Entwicklung eines zentralen Management-Systems für Puppet Agents auf RHEL-Systemen.",
+        "tech": "Python, Puppet, Perl, LDAP, Icinga2",
+        "period": "2024"
       },
       {
-        "title": "Proxy-Web-Frontend",
-        "description": "Integration eines Web-Frontends basierend auf einem vorhandenen GitHub-Repository als zentrale Website für interne IT-Dienste. Erstellung eines Python-Parser-Skripts, das die Weboberfläche basierend auf Benutzerrollen anpasst."
+        "title": "Proxy Web-Frontend",
+        "description": "Integration eines Web-Frontends für interne Dienste inkl. Python-Parser basierend auf Benutzerrollen.",
+        "tech": "Python, HTML/CSS, Linux, ACL",
+        "period": "2023"
       },
       {
         "title": "Infrastructure as Code",
-        "description": "Design von Puppet-Rollen und -Klassen für die Entwicklung von Serversystemen, einschließlich Mindestanforderungen. Erstellung von Ansible-Playbooks für die Datenbankkonfiguration in bereichsübergreifenden Systemen."
+        "description": "Entwicklung von Puppet-Rollen und Ansible-Playbooks für Server-Deployments.",
+        "tech": "Puppet, Ansible, GitLab",
+        "period": "2023"
+      },
+      {
+        "title": "Prozessautomatisierung",
+        "description": "Automatisierte Passwort-Policy-Checks inkl. LDAP-Abfragen & SMTP-Reminder.",
+        "tech": "PowerShell, Active Directory",
+        "period": "Juni 2025"
+      },
+      {
+        "title": "DokuWiki Knowledge Base",
+        "description": "Implementierung eines DokuWiki-Servers inkl. ACL, Automation & Backups.",
+        "tech": "Linux, Bash, Python, Apache, MariaDB",
+        "period": "Februar 2025 – März 2025"
+      },
+      {
+        "title": "Persönliche Portfolio Website",
+        "description": "Komplett responsive Portfolio-Website mit Animationen und Kontaktformular.",
+        "tech": "Next.js, React, Tailwind CSS",
+        "period": "November 2024"
       }
-    ],
-    "skills": {
-      "list": [
-        { "name": "RHEL7/8/9-Systeme", "level": 85 },
-        { "name": "Python", "level": 85 },
-        { "name": "Bash/Powershell", "level": 85 },
-        { "name": "Puppet / Ansible (IaC)", "level": 85 },
-        { "name": "Git", "level": 85 },
-        { "name": "SQL / PL SQL", "level": 65 }
-      ]
-    },
+    ]
+,
     "languages": {
       "list": [
-        { "name": "Deutsch", "level": 100 },
-        { "name": "Englisch", "level": 100 },
-        { "name": "Albanisch", "level": 100 },
-        { "name": "Französisch", "level": 65 }
+        { "name": "Deutsch", "level": "Muttersprache" },
+        { "name": "Englisch", "level": "Fließend" },
+        { "name": "Albanisch", "level": "Muttersprache" },
+        { "name": "Französisch", "level": "Mittel" }
       ]
     },
+
     "download": "Lebenslauf herunterladen"
-  }
+  } 
+
 }
