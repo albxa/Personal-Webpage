@@ -1,4 +1,3 @@
-=======
 # Personal Webpage
 
 A responsive personal portfolio website showcasing skills, experience, and projects. Built using modern web development technologies, this project aims to present a clean and professional online presence.
