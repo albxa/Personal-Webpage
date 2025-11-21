@@ -128,4 +128,3 @@ Describe the directory and file structure of the project.
 ### Animations
 - File: `/pages/index.js`
 - Description: Animated introduction text using Framer Motion.
->>>>>>> b4e9a17f0ea6f2b65a93f5a3d75ac65adc6caf91
